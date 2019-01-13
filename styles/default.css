@@ -1,0 +1,132 @@
+/* General/shared styling */
+
+  body {
+    font-family: "Century Gothic", Arial, san-serif;
+    margin: 0;
+    background-color: #ced0ce;
+    color: #020402;
+    min-width: 800px;
+  }
+
+  h1, h2, h3 {
+    color: #475841;
+    font-family: "Courier", "Garamond", serif;
+  }
+
+  a {
+    color: #475841;
+    text-decoration: none;
+  }
+
+
+  /* Wrappers */
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .large-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  /* Lists */
+
+  ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+
+  li {
+    padding-bottom: 5px;
+  }
+
+  .nested-list {
+    list-style-type: none;
+  }
+
+  ul h1,
+  ul h2,
+  ul h3 {
+    margin-bottom: 10px;
+  }
+
+  /* Figures and Images */
+
+  figure {
+    float: right;
+    margin-right: 0;
+  }
+
+  img {
+
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
+  /* Section and Text Stylings */
+
+  .lightened {
+    background-color: #e6e8e6;
+  }
+
+  .highlighted {
+    color: #cf5c36;
+  }
+
+/* Header */
+
+  header h1 {
+    margin: 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 70%;
+  }
+
+  header .menu {   /* ul */
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-top: 4px;    /* align bottom of header with bottom of the h1 in the logo */
+    font-size: 150%;
+    padding: 0;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 0 20px;    /* override inherited 5px */
+    
+  }
+
+
+
+/* Main */
+
+  main {
+    
+  }
+
+
+/* Footer */
+
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  footer .wrapper p {
+    margin: 0;
+  }

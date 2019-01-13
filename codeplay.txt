@@ -1,0 +1,199 @@
+3+1
+4
+8/3
+2.6666666666666665
+Math.floor(8/3)
+2
+let i = 4
+undefined
+i
+4
+i /= 2
+2
+let greeting = "Hello"
+undefined
+greeting
+"Hello"
+greeting += ", Austin"
+"Hello, Austin"
+function(greet) {
+VM366:1 Uncaught SyntaxError: Unexpected token (
+function greet(greeting) {
+    console.log(greeting);
+}
+undefined
+greet(greeting);
+VM464:2 Hello, Austin
+undefined
+function increase(n) {
+    n++;
+}
+undefined
+i
+2
+increase(i);
+undefined
+i
+2
+function increase(n) {
+    return n+1;
+}
+undefined
+increase
+ƒ increase(n) {
+    return n+1;
+}
+i = increase(i);
+3
+i
+3
+increase = (n) => n+1;
+(n) => n+1
+increase
+(n) => n+1
+i = increase(i);
+4
+i
+4
+for(let j = 0; j < i; j++) {
+    console.log(j);
+}
+VM901:2 0
+VM901:2 1
+VM901:2 2
+VM901:2 3
+undefined
+let arr = Array(i);
+undefined
+arr
+(4) [empty × 4]length: 4__proto__: Array(0)
+arr[0];
+undefined
+arr.fill(0);
+(4) [0, 0, 0, 0]0: 11: 22: 33: 44: 56: 6length: 7__proto__: Array(0)
+arr[0] = 1
+1
+arr
+(4) [1, 0, 0, 0]0: 11: 22: 33: 44: 5length: 5__proto__: Array(0)
+arr.forEach(i => arr[i] = i+1)
+undefined
+arr
+(5) [1, 2, 3, 4, 5]0: 11: 22: 33: 44: 5length: 5__proto__: Array(0)
+arr.length
+5
+arr[6] = 6
+6
+arr
+(7) [1, 2, 3, 4, 5, empty, 6]
+arr.forEach(i => console.log(i));
+VM1221:1 1
+VM1221:1 2
+VM1221:1 3
+VM1221:1 4
+VM1221:1 5
+VM1221:1 6
+undefined
+arr.fill(Array(arr.length).fill(0))
+(7) [Array(7), Array(7), Array(7), Array(7), Array(7), Array(7), Array(7)]0: (7) [0, 0, 0, 0, 0, 0, 0]1: (7) [0, 0, 0, 0, 0, 0, 0]2: (7) [0, 0, 0, 0, 0, 0, 0]3: (7) [0, 0, 0, 0, 0, 0, 0]4: (7) [0, 0, 0, 0, 0, 0, 0]5: (7) [0, 0, 0, 0, 0, 0, 0]6: (7) [0, 0, 0, 0, 0, 0, 0]length: 7__proto__: Array(0)
+arr.forEach(i => console.log(i))
+VM1435:1 (7) [0, 0, 0, 0, 0, 0, 0]
+VM1435:1 (7) [0, 0, 0, 0, 0, 0, 0]
+VM1435:1 (7) [0, 0, 0, 0, 0, 0, 0]
+VM1435:1 (7) [0, 0, 0, 0, 0, 0, 0]
+VM1435:1 (7) [0, 0, 0, 0, 0, 0, 0]
+VM1435:1 (7) [0, 0, 0, 0, 0, 0, 0]
+VM1435:1 (7) [0, 0, 0, 0, 0, 0, 0]
+undefined
+arr = []
+[]
+arr.length = 4;
+4
+arr.forEach(i => console.log(i))
+undefined
+arr[0]
+undefined
+arr.fill(0)
+(4) [0, 0, 0, 0]
+Array(4).keys()
+Array Iterator {}__proto__: Array Iteratornext: ƒ next()arguments: (...)caller: (...)length: 0name: "next"__proto__: ƒ ()[[Scopes]]: Scopes[0]Symbol(Symbol.toStringTag): "Array Iterator"__proto__: Object
+Array(4).keys().forEach(i => console.log(i))
+VM1782:1 Uncaught TypeError: Array(...).keys(...).forEach is not a function
+    at <anonymous>:1:17
+(anonymous) @ VM1782:1
+...Array(4).keys()
+VM1824:1 Uncaught SyntaxError: Unexpected token ...
+[...Array(4).keys()]
+(4) [0, 1, 2, 3]
+arr.map(i => [...Array(arr.length).keys()])
+(4) [Array(4), Array(4), Array(4), Array(4)]0: (4) [0, 1, 2, 3]1: (4) [0, 1, 2, 3]2: (4) [0, 1, 2, 3]3: (4) [0, 1, 2, 3]length: 4__proto__: Array(0)
+arr.forEach(i => console.log(i))
+4VM2043:1 0
+undefined
+arr[0]
+0
+arr = arr.map(i => [...Array(arr.length).keys()])
+(4) [Array(4), Array(4), Array(4), Array(4)]0: (4) [0, 1, 2, 3]1: (4) [0, 1, 2, 3]2: (4) [0, 1, 2, 3]3: (4) [0, 1, 2, 3]length: 4__proto__: Array(0)
+arr[0]
+(4) [0, 1, 2, 3]
+arr.map(row => row.map(val => val*2))
+(4) [Array(4), Array(4), Array(4), Array(4)]0: (4) [0, 2, 4, 6]1: (4) [0, 2, 4, 6]2: (4) [0, 2, 4, 6]3: (4) [0, 2, 4, 6]length: 4__proto__: Array(0)
+arr[0]
+(4) [0, 1, 2, 3]
+arr = arr.map(row => row.map(val => val*2))
+(4) [Array(4), Array(4), Array(4), Array(4)]
+arr[0]
+(4) [0, 2, 4, 6]
+let sum = arr.reduce((total, row) => total + row.reduce((total2, i) => total2 + i, 0), 0);
+undefined
+sum
+48
+console.log(arr.pop())
+VM2464:1 (4) [0, 2, 4, 6]
+undefined
+arr = []
+[]
+arr.push(2)
+1
+arr[0]
+2
+arr.push(1, "test", arr)
+4
+arr[3]
+(4) [2, 1, "test", Array(4)]0: 21: 12: "test"3: (4) [2, 1, "test", Array(4)]0: 21: 12: "test"3: Array(4)0: 21: 12: "test"3: (4) [2, 1, "test", Array(4)]length: 4__proto__: Array(0)length: 4__proto__: Array(0)length: 4__proto__: Array(0)
+arr[3][3][3][3][3][3][3][3]
+(4) [2, 1, "test", Array(4)]
+arr[3][3] = undefined
+undefined
+arr[3]
+undefined
+arr
+(4) [2, 1, "test", undefined]
+arr[3] = function(i) { return 3; }
+ƒ (i) { return 3; }
+arr[3]
+ƒ (i) { return 3; }
+arr[3] = function() { return 3; }
+ƒ () { return 3; }
+arr[3]
+ƒ () { return 3; }
+arr[3]()
+3
+arr.reduce((combined, val) => combined + " " + val, "");
+" 2 1 test function() { return 3; }"
+arr[0] = arr[3]
+ƒ () { return 3; }
+arr.reduce((combined, val) => combined + " " + val, "");
+" function() { return 3; } 1 test function() { return 3; }"
+arr.slice(1, 3)
+(2) [1, "test"]
+arr
+(4) [ƒ, 1, "test", ƒ]
+arr.splice(1, 2)
+(2) [1, "test"]
+arr
+(2) [ƒ, ƒ]
+arr.forEach(fn => console.log(fn()))
+2VM3415:1 3
+undefined
+arr = arr.map(fn => fn())
+(2) [3, 3]

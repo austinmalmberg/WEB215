@@ -28,7 +28,9 @@
 
     <ul>
 
-      <li><a href="?p=gear.php">Spritesheet Demo</a></li> 
+      <li><a href="?p=gear.php">Spritesheet Demo</a></li>
+      
+      <li><a href="?p=compass.php">One Div Demo</a></li>
 
     </ul>
 

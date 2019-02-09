@@ -4,7 +4,7 @@
 
     <h1>Table of Contents</h1>
 
-    <h3>Week 2</h3>
+    <h2>Week 2</h2>
 
     <ul>
 
@@ -16,11 +16,19 @@
 
     </ul>
 
-    <h3>Week 3</h3>
+    <h2>Week 3</h2>
 
     <ul>
 
-      <li><a href="">Table of Contents</a></li> 
+      <li><a href="?p=home.php">Table of Contents</a></li> 
+
+    </ul>
+    
+    <h2>Week 4</h2>
+
+    <ul>
+
+      <li><a href="?p=gear.php">Spritesheet Demo</a></li> 
 
     </ul>
 

@@ -34,13 +34,11 @@
           
           <ul class="menu">
             
-            <li><a href="?p=home.php">Table of Contents</a></li>
+            <li><a href="?p=home.php">Home</a></li>
 
             <li><a href="?p=introduction.php">About</a></li>
-
-            <li><a href="?p=contract.php">Contract</a></li> 
-
-            <li><a href="?p=brand.php">Brand</a></li>
+            
+            <li><a href="?p=gear.php">Gear</a></li>
             
           </ul>
         </nav>

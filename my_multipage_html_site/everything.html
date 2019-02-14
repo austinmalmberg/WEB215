@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    
+    <title>Home - The Weekend Camper</title>
+      
+    <base href="../images/" target="_self">
+    
+    <link rel = "stylesheet" type = "text/css" href = "../styles/brand.css" />
+    
+  </head>
+  
+  <body>
+
+    <header>
+      
+      <div class="wrapper">
+        
+        <div class="logo">
+          
+          <a href="index.html">
+            
+            <p id="title">The Weekend Camper</p>
+            
+            <p id="tagline">Get away when you can</p>
+            
+          </a>
+          
+        </div>
+        
+        <nav>
+          
+          <ul class="menu">
+            
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="introduction.html">About</a></li>
+            
+            <li><a href="gear.html">Gear</a></li>
+              
+            <li><a href="everything.html">Everything</a></li>
+            
+          </ul>
+          
+        </nav>
+        
+      </div>
+      
+    </header>
+
+    <main class="lightened">
+        
+      <div class="wrapper">
+
+        <h1>All HTML5 Tags</h1>
+
+        <h2>A Demonstration</h2>
+
+        <article>
+
+          <section class="tag-demo">
+
+            <h3>The following tags are already being used within the framework of this page:</h3>
+
+            <ol>
+
+              <li>&lt;!DOCTYPE&gt;</li>
+
+              <li>&lt;a&gt;</li>
+
+              <li>&lt;article&gt;</li>
+
+              <li>&lt;base&gt;</li>
+
+              <li>&lt;body&gt;</li>
+
+              <li>&lt;div&gt;</li>
+
+              <li>&lt;footer&gt;</li>
+
+              <li>&lt;h1&gt;</li>
+
+              <li>&lt;h2&gt;</li>
+
+              <li>&lt;head&gt;</li>
+
+              <li>&lt;header&gt;</li>
+
+              <li>&lt;html&gt;</li>
+
+              <li>&lt;img&gt;</li>
+
+              <li>&lt;li&gt;</li>
+
+              <li>&lt;link&gt;</li>
+
+              <li>&lt;main&gt;</li>
+
+              <li>&lt;meta&gt;</li>
+
+              <li>&lt;nav&gt;</li>
+
+              <li>&lt;p&gt;</li>
+
+              <li>&lt;section&gt;</li>
+
+              <li>&lt;title&gt;</li>
+
+              <li>&lt;ul&gt;</li>
+
+            </ol>
+
+            <p class="tag-summary">Tags used in this section: &lt;h3&gt;, &lt;ol&gt;</p>
+
+          </section>
+
+          <section class="tag-demo">
+            
+            <h3>What's the difference between &lt;i&gt; and &lt;em&gt;?</h3>
+            
+            <p>While both tags are typically (though not always) displayed as italic, <i>&lt;i&gt;</i> is intended to separate while <em>&lt;em&gt;</em> is meant to distinguish.
+              
+            <br>
+              
+            The same principle applies to <b>&lt;b&gt;</b> and <strong>&lt;strong&gt;</strong> tags.</p>
+
+            <h4>Examples:</h4>
+            
+            <p>Using &lt;i&gt;: Mama says <i>"Stupid is as stupid does."</i></p>
+            
+            <p>Using &lt;em&gt;: Run, Forrest! <em>Run!</em></p>
+            
+            <aside><p>With accessibility in mind, front-end developers should consider using &lt;strong&gt; and &lt;em&gt; in place of &lt;b&gt; and &lt;i&gt;.</p></aside>
+
+            <p class="tag-summary">Tags used in this section: &lt;aside&gt;, &lt;b&gt;, &lt;br&gt;, &lt;em&gt;, &lt;h4&gt;, &lt;i&gt;, &lt;strong&gt;</p>
+
+          </section>
+          
+          <section class="tag-demo">
+            
+            <h3>Working with JavaScript and forms</h3>
+            
+            <p>Click the Submit button below to run the following code:</p>
+            
+            <pre><code id="display-name-code"></code></pre>
+          
+            <form name="formDisplayName" onsubmit="alertName()">
+              <label>Enter your name: </label>
+              <input type="text" name="fName" placeholder="Enter your name">
+              <input type="submit" value="Submit">
+            </form>
+            
+            <p class="tag-summary">Tags used in this section: &lt;code&gt;, &lt;form&gt;, &lt;input&gt;, &lt;label&gt;, &lt;pre&gt;, &lt;script&gt;</p>
+          
+          </section>
+
+        </article>
+
+      </div>
+      
+    </main>
+
+    <footer>
+      
+      <div class="wrapper">
+        
+        <div class="html-validator">
+          
+          <a href="http://validator.w3.org/check?uri=referer">
+            
+            <img src="valid_html5.gif" alt="Valid HTML 5" height="31" width="88" style="border:0px;">
+            
+          </a>
+          
+        </div>
+        <div class="copyright">
+          
+          <p>&copy; 2018 Austin Malmberg</p>
+          
+          <p><a href="mailto:amalmbe0@email.cpcc.edu">amalmbe0@email.cpcc.edu</a></p>
+          
+        </div>
+        
+        <div class="css-validator">
+          
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            
+            <img src="valid_css.gif" alt="Valid CSS" height="31" width="88" style="border:0px;">
+            
+          </a>
+          
+        </div>
+        
+      </div>
+      
+    </footer>
+    
+    <script id="js-alert-name">
+      function alertName() {
+        let name = document.forms["formDisplayName"]["fName"].value;
+        alert(`Your name is ${name}.`);
+      }
+    </script>
+    
+    <script>
+      /* Displays the alertName function code within */
+      
+      var alertNameFn = document.getElementById('js-alert-name').innerHTML;
+
+      document.getElementById('display-name-code').innerHTML = alertNameFn;
+    </script>
+  </body>
+  
+</html>

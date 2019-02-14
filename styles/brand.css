@@ -31,6 +31,11 @@
     border-bottom: 1px solid black;
   }
 
+  aside {
+    border: 2px solid #CF5C36;
+    padding: 0 10px;
+  }
+
 
   /* Wrapper */
 
@@ -277,7 +282,7 @@
 
 
 
-  /* onediv.html */
+  /* compass.html */
 
   .compass {
     margin: 20px auto;
@@ -308,4 +313,25 @@
     border-left-color: #9f0000;
     border-top-color: #ef0000;
     transform: scale(3) rotate(45deg) skew(50deg, 50deg)
+  }
+
+
+  /* everything.html */
+
+  .tag-demo {
+    margin-top: 40px;
+    border-bottom: 1px solid black;
+  }
+
+  .tag-demo ol {
+    list-style: decimal;
+  }
+
+  .tag-demo pre {
+    background-color: #ddd;
+  }
+
+  .tag-summary {
+    color: #666;
+    font-style: italic;
   }

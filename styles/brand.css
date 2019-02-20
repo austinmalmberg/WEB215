@@ -318,20 +318,18 @@
 
   /* everything.html */
 
-  .tag-demo {
+  .flex-container {
+    display: flex;
+  }
+
+  #all-tags {
     margin-top: 40px;
-    border-bottom: 1px solid black;
+    height: 900px;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
-  .tag-demo ol {
-    list-style: decimal;
-  }
-
-  .tag-demo pre {
-    background-color: #ddd;
-  }
-
-  .tag-summary {
-    color: #666;
-    font-style: italic;
+  #all-tags a {
+    display: block;
+    margin: 8px 0;
   }
